@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>NIPPO</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -61,14 +61,6 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-
-            .btn-square-little-rich:active {
-                /*押したとき*/
-                border: solid 1px #03A9F4;
-                box-shadow: none;
-                text-shadow: none;
-            }
-
         </style>
     </head>
     <body>
@@ -89,23 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                NIPPO
-                </div>
-
-                <p>
-                誰もが投稿しやすく<br>
-　              勉強した内容や時間を見やすく<br>
-　              仲間とともに勉強を続けられる環境を作っていきます
-                </p>
-
-                <a href="{{ url('/register') }}" class="btn-square-little-rich">さぁ、始めよう！</a>
-                <br>
-                <br>
-            
-                    <div class="links">
-                    <a href="{{ url('/contact') }}">お問い合わせ</a>
-                    <a href="{{ url('/help') }}">ヘルプ</a>
-                    <a href="{{ url('/guide') }}">ガイド</a>
+                    ガイド
                 </div>
             </div>
         </div>
