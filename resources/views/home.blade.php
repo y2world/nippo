@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('NIPPO', 'NIPPO') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'NIPPO') }}
+                    {{ config('NIPPO', 'NIPPO') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -107,7 +107,7 @@ width:700px;
      <br>
      <div class="contents">
        <p>学習内容：</p>
-       <textarea style="width:40%; height:100px;" placeholder="「躓いたこと」「できるようになったこと」など"></textarea> 
+       <textarea style="width:60%; height:100px;" placeholder="「躓いたこと」「できるようになったこと」など"></textarea> 
      </div><br>
 
      <div class="time">
