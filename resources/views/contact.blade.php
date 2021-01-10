@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -10,10 +11,10 @@
                 <div class="card-body">
                 お名前
                 <br>
-                <input type="date" name="date" value=""><br><br>
+                <input type="text" name="name" value=""><br><br>
                 メールアドレス
                 <br>
-                <input type="date" name="date" value=""><br><br>
+                <input type="text" name="email" value=""><br><br>
                 件名
                 <br>
                 <textarea style="width:100%; height:25px;"></textarea>

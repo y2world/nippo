@@ -43,7 +43,6 @@
                     <br>
                     <br>
                     <button type="submit">投稿</button>
-                    <hr>
                 </div>
                 
             </div>
