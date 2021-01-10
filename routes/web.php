@@ -29,6 +29,11 @@ Route::get('/guide', function () {
     return view('guide');
 });
 
+Route::get('/history', function () {
+    return view('history');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

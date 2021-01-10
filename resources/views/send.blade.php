@@ -93,19 +93,9 @@
                 </div>
 
                 <p>
-                誰もが投稿しやすく<br>
-　              勉強した内容や時間を見やすく<br>
-　              仲間とともに勉強を続けられる環境を作っていきます
+                投稿しました。
                 </p>
-
-                <a href="{{ url('/register') }}" class="btn-square-little-rich">さぁ、始めよう！</a>
-                <br>
-                <br>
-            
-                    <div class="links">
-                    <a href="{{ url('/contact') }}">お問い合わせ</a>
-                    <a href="{{ url('/help') }}">ヘルプ</a>
-                    <a href="{{ url('/guide') }}">ガイド</a>
+                
                 </div>
             </div>
         </div>
