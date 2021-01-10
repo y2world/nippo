@@ -55,6 +55,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ url('home') }}">
+                                        {{ __('マイページ') }}
                                     <a class="dropdown-item" href="{{ url('history') }}">
                                         {{ __('過去の学習記録') }}
                                     <a class="dropdown-item" href="{{ route('logout') }}"

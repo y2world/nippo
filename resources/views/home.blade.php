@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('MY PAGE') }}</div>
 
                 <div class="card-body">
-                   <p>あなたの勉強記録をシェアしましょう</p>
+                   <p>あなたの学習記録をシェアしましょう</p>
                    <a href="{{ url('/history') }}">過去の学習記録</a>
                    <hr>
                    <form action="history.php" method="post">
@@ -40,8 +40,9 @@
                     date_default_timezone_set('Asia/Tokyo');
                     echo date("Y/m/d H:i:s") ?>
 
-
-                    <br><br><button type="submit">投稿</button>
+                    <br>
+                    <br>
+                    <button type="submit">投稿</button>
                     <hr>
                 </div>
                 

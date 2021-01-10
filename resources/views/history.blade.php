@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('過去の学習記録') }}</div>
 
                 <div class="card-body">
-                   <p>学習記録なし</p> 
+                   <p>学習記録はまだありません</p> 
                 </div>
                 
             </div>
