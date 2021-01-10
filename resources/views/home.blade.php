@@ -31,7 +31,7 @@
                     <input type="checkbox" value="selfstudy"><lavel for="selfstudy">自習</label>&nbsp;
                     <input type="checkbox" value="task"><lavel for="task">課題</label>&nbsp;
                     <input type="checkbox" value="reading"><lavel for="reading">読書</label>&nbsp;
-                    <input type="checkbox" value="output"><lavel for="output">アウトプット会</label>&nbsp;<br>
+                    <input type="checkbox" value="output"><lavel for="output">アウトプット会</label>&nbsp;
                     <input type="checkbox" value="other"><lavel for="other">その他</label>&nbsp;&nbsp;<input type="text">
 
                     <br>
