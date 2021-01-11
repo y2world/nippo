@@ -29,11 +29,12 @@ Route::get('/guide', function () {
     return view('guide');
 });
 
-Route::get('/history', function () {
-    return view('history');
+Route::get('/show', function () {
+    return view('show');
 });
 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('posts', 'PostController');
+Route::resource('comments', 'CommentController');
