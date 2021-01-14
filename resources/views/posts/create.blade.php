@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                    <p>あなたの学習記録をシェアしましょう</p>
-                   <a href="{{ url('/posts') }}">過去の学習記録</a>
+                   <a href="{{ url('/posts') }}">みんなの学習記録</a>
                    <hr>
                    @if ($errors->any())
                     <div class="alert alert-danger">
