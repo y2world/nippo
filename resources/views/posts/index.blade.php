@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <div class="card text-center">
                 <div class="card-header">
-                    過去の学習記録
+                    みんなの学習記録
                 </div>
                 @foreach ($posts as $post)
                 <div class="card-body">

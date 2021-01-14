@@ -58,7 +58,7 @@
                                     <a class="dropdown-item" href="{{ url('posts/create') }}">
                                         {{ __('マイページ') }}
                                     <a class="dropdown-item" href="{{ url('posts') }}">
-                                        {{ __('過去の学習記録') }}
+                                        {{ __('みんなの学習記録') }}
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
