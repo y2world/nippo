@@ -36,7 +36,7 @@ class PostController extends Controller
         $post -> content     = $request -> content;
         $post -> hour     = $request -> hour; //ユーザー入力のbodyを代入
         $post -> language     = $request -> language;
-        $post -> category     = $request -> content;
+        $post -> category    = $request -> category;
         
         $post -> save(); //保存してあげましょう
         

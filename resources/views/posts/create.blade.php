@@ -29,20 +29,9 @@
                         学習時間<br>
                         <input type="number" min="0" step="0.25" name="hour"></input>時間<br><br>
                         学習言語<br>
-                        <input type="checkbox" value="html"><lavel for="html">HTML</label>&nbsp;
-                        <input type="checkbox" value="css"><lavel for="css">CSS</label>&nbsp;
-                        <input type="checkbox" value="javascript"><lavel for="javascript">Java Script</label>&nbsp;
-                        <input type="checkbox" value="php"><lavel for="php">PHP</label>&nbsp;
-                        <input type="checkbox" value="other"><lavel for="other">その他
-                        <br>
-                        <br>
+                        <input type="text" name="language" value=""><br><br>
                         カテゴリー<br>
-                        <input type="checkbox" value="lecture"><lavel for="lecture">授業</label>
-                        <input type="checkbox" value="selfstudy"><lavel for="selfstudy">自習</label>&nbsp;
-                        <input type="checkbox" value="task"><lavel for="task">課題</label>&nbsp;
-                        <input type="checkbox" value="reading"><lavel for="reading">読書</label>&nbsp;
-                        <input type="checkbox" value="output"><lavel for="output">アウトプット会</label>&nbsp;
-                        <input type="checkbox" value="other"><lavel for="other">その他</label>&nbsp;&nbsp;<input type="text">
+                        <input type="text" name="category" value="">
 
                         <br>
                         <br>

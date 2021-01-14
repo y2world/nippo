@@ -16,16 +16,14 @@ class PostRequest extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
     public function rules()
     {
         return [
             'date' => 'required',
             'content' => 'required',
+            'hour' => 'required',
+            'language' => 'required',
+            'category' => 'required',
         ];
     }
     public function messages()
@@ -33,6 +31,10 @@ class PostRequest extends FormRequest
         return [
             'date.required' => '日付は必須です。',
             'content.required'  => '学習内容は必須です。',
+            'hour.required'  => '時間数は必須です。',
+            'language.required'  => '言語は必須です。',
+            'category.required'  => 'カテゴリーは必須です。',
+
         ];
     }
 }
