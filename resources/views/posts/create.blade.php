@@ -29,9 +29,9 @@
                         学習時間<br>
                         <input type="number" min="0" step="0.25" name="hour"></input>時間<br><br>
                         学習言語<br>
-                        <input type="text" size="25" name="language" placeholder="ex : HTML, CSS, Java Script, PHP" value=""><br><br>
+                        <input type="text" size="30" name="language" placeholder="ex : HTML, CSS, Java Script, PHP" value=""><br><br>
                         カテゴリー<br>
-                        <input type="text" size="25"　name="category" placeholder="ex : 自習、読書、アウトプット会" value="">
+                        <input type="text" size="30"　name="category" placeholder="ex : 自習、読書、アウトプット会" value="">
 
                         <br>
                         <br>
