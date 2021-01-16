@@ -12,7 +12,7 @@
                     <p class="card-date">日時 : {{ $post->date }}&nbsp;({{ $post->hour }}時間)</p>
                     <p class="card-content">学習内容 : {{ $post->content }}</p>
                     <p class="card-category">カテゴリー : {{ $post->category }}</p>
-                    <p class="card-category">by {{ Auth::user()->name }}</p>
+                    <p class="card-category">by&nbsp;<a href="{{ route('users.show', $post->user_id)}}">{{ Auth::user()->name }}</p>
                     <a href="#" class="btn btn-primary">コメントする</a>
                 </div>
                 <div class="card-footer text-muted">

@@ -37,4 +37,5 @@ Route::get('/show', function () {
 Auth::routes();
 
 Route::resource('posts', 'PostController');
+Route::resource('/users', 'UsersController', ['only' => ['show']]);
 Route::resource('comments', 'CommentController');

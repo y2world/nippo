@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                    <p>あなたの学習記録をシェアしましょう</p>
-                   <a href="{{ url('/posts') }}">過去の学習記録</a>
+                   <a href="{{ url('/users') }}">過去の学習記録</a>
                    <hr>
                    @if ($errors->any())
                     <div class="alert alert-danger">
@@ -31,7 +31,7 @@
                         学習言語<br>
                         <input type="text" size="30" name="language" placeholder="ex : HTML, CSS, Java Script, PHP" value=""><br><br>
                         カテゴリー<br>
-                        <input type="text" size="30"　name="category" placeholder="ex : 自習、読書、アウトプット会" value="">
+                        <input type="text" size="30"　name="category" placeholder="ex : 自習、読書、課題" value="">
 
                         <br>
                         <br>
