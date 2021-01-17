@@ -37,7 +37,7 @@ class PostController extends Controller
         $post -> hour     = $request -> hour; //ユーザー入力のbodyを代入
         $post -> language     = $request -> language;
         $post -> category    = $request -> category;
-        
+        $post -> user_name  = Auth::user()->name;
         $post -> save(); //保存してあげましょう
         
         return redirect()->route('posts.index'); 
