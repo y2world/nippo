@@ -96,6 +96,14 @@
                 font-size: 20px;
             }
 
+            @media screen and (max-width: 480px) {
+                .text {
+                    font-size:14px;
+                }
+            }
+
+            
+
         </style>
     </head>
     <body>
