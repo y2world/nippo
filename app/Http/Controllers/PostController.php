@@ -31,6 +31,7 @@ class PostController extends Controller
     public function store(PostRequest $request)
     {
         $post = new Post;
+        $post -> id         = $request -> id;
         $post -> user_id  = Auth::id(); //ログイン中のユーザーidを代入
         $post -> date    = $request -> date; //ユーザー入力のtitleを代入
         $post -> content     = $request -> content;

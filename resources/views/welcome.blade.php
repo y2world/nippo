@@ -4,17 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>NIPPO</title>
+        <title>NIPPO - TOP</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: white;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Oswald', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -46,6 +47,31 @@
 
             .title {
                 font-size: 84px;
+                color: grey;
+            }
+
+            .start {
+                font-size: 30px;
+            }
+
+            .btn-square-little-rich {
+                position: relative;
+                display: inline-block;
+                padding: 0.25em 0.5em;
+                text-decoration: none;
+                color: #FFF;
+                background: #03A9F4;/*色*/
+                border: solid 1px #0f9ada;/*線色*/
+                border-radius: 4px;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+                text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+            }
+
+            .btn-square-little-rich:active {
+                /*押したとき*/
+                border: solid 1px #03A9F4;
+                box-shadow: none;
+                text-shadow: none;
             }
 
             .links > a {
@@ -62,11 +88,12 @@
                 margin-bottom: 30px;
             }
 
-            .btn-square-little-rich:active {
-                /*押したとき*/
-                border: solid 1px #03A9F4;
-                box-shadow: none;
-                text-shadow: none;
+            .platform {
+                font-size: 25px;
+            }
+
+            .text {
+                font-size: 20px;
             }
 
         </style>
@@ -89,23 +116,29 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                NIPPO
+                    NIPPO
                 </div>
 
-                <p>
+                <br>
+                <div class="text">
                 誰もが投稿しやすく<br>
 　              勉強した内容や時間を見やすく<br>
 　              仲間とともに勉強を続けられる環境を作っていきます
-                </p>
+                </div>
 
+                <br>
+                <br>
+                
                 <a href="{{ url('/register') }}" class="btn-square-little-rich">さぁ、始めよう！</a>
+
                 <br>
                 <br>
-            
-                    <div class="links">
-                    <a href="{{ url('/contact') }}">お問い合わせ</a>
+                <br>
+
+                <div class="links">
                     <a href="{{ url('/help') }}">ヘルプ</a>
                     <a href="{{ url('/guide') }}">ガイド</a>
+                    <a href="{{ url('/contact') }}">お問い合わせ</a>
                 </div>
             </div>
         </div>
