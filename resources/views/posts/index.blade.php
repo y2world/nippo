@@ -13,6 +13,7 @@
                     <p class="card-content">学習内容 : {{ $post->content }}</p>
                     <p class="card-category">カテゴリー : {{ $post->category }}</p>
                     <p class="card-category">by&nbsp;<a href="">{{ $post->user_name }}</p>
+                    <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-secondary">編集</a>
                     <a href="#" class="btn btn-primary">コメントする</a>
                 </div>
                 <div class="card-footer text-muted">

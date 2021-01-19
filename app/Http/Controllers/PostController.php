@@ -63,32 +63,41 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+
+        if(Auth::id() !== $post->user_id){
+            return with("投稿したユーザーでないと削除できません。"); 
+        }
+
+        return view('posts.edit', compact('post'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
-    {
-        //
+    {   $post = Post::find($id);
+
+        if(Auth::id() !== $post->user_id){
+            return with("投稿したユーザーでないと削除できません。"); 
+        }
+        $post -> date    = $request -> date; //ユーザー入力のtitleを代入
+        $post -> content     = $request -> content;
+        $post -> hour     = $request -> hour; //ユーザー入力のbodyを代入
+        $post -> language     = $request -> language;
+        $post -> category    = $request -> category;
+        $post -> save(); //保存してあげましょう
+        
+        return view('posts.show', compact('post'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         $post = Post::find($id);
         $post -> delete();
         return redirect()->route('posts.index');
+
+        if(Auth::id() !== $post->user_id){
+            return with("投稿したユーザーでないと削除できません。"); 
+        }
     }
 
     public function index()

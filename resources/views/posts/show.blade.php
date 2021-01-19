@@ -9,8 +9,8 @@
 
                 <div class="card-body">
                    <section>
-                    <p>投稿完了しました</p>
-                    <button onclick="location.href='home.php'">戻る</button>
+                    <p>更新しました</p>
+                    <a href="{{ url('/posts') }}" class="btn btn-light">戻る</a>
                     </section>
                 </div>
                 
