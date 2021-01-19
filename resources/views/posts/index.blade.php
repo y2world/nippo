@@ -11,6 +11,7 @@
                 <div class="card-body">
                     <p class="card-date">日時 : {{ $post->date }}&nbsp;({{ $post->hour }}時間)</p>
                     <p class="card-content">学習内容 : {{ $post->content }}</p>
+                    <p class="card-category">言語 : {{ $post->language }}</p>
                     <p class="card-category">カテゴリー : {{ $post->category }}</p>
                     <p class="card-category">by&nbsp;<a href="">{{ $post->user_name }}</p>
                     <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-secondary">編集</a>
