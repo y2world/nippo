@@ -14,10 +14,15 @@
          </div>
         @foreach ($posts as $post)
         <li class="list-group-item">
-        <p class="card-date">日時 : {{ $post->date }}&nbsp;({{ $post->hour }}時間)</p>
-        <p class="card-content">学習内容 : {{ $post->content }}</p>
-        <p class="card-category">言語 : {{ $post->language }}</p>
-        <p class="card-category">カテゴリー : {{ $post->category }}</p>
+        <b>日時 : {{ $post->date }}</b>
+        <br>
+        <b>学習時間</b> : {{ $post->hour }}時間
+        <br>
+        <b>学習内容</b> : {{ $post->content }}
+        <br>
+        <b>言語</b> : {{ $post->language }}
+        <br>
+        <b>カテゴリー</b> : {{ $post->category }}
         </li>
         @endforeach
     </div>
