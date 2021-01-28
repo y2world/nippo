@@ -17,7 +17,7 @@
             {{method_field('PATCH')}}
                 <div class="form-group">
                     <label>学習日</label><br>
-                    <input type="date" placeholder="yyyy-mm-dd" name="date" value=""> </textarea>
+                    <input type="date" placeholder="yyyy-mm-dd" name="date" value="{{ $post->date }}"> </textarea>
                 </div>
                 <label>内容</label>
                     <textarea class="form-control" rows="5" name="content">{{ $post->content }}</textarea>

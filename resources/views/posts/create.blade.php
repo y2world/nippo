@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                    <p>あなたの学習記録をシェアしましょう</p>
-                   <a href="{{ url('/users') }}">過去の学習記録</a>
+                   <a href="{{ route('users.show', Auth::user()->id )}}">過去の学習記録</a>
                    <hr>
                    @if ($errors->any())
                     <div class="alert alert-danger">

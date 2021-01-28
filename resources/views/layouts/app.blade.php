@@ -19,6 +19,20 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+<style>
+    html, body {
+        font-family: helvetica;
+    }
+    .navbar-brand {
+        color: turquoise;
+        font-family: Oswald;
+    }
+</style>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -57,7 +71,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ url('posts/create') }}">
                                         {{ __('マイページ') }}
-                                        <a class="dropdown-item" href="{{ url('users') }}">
+                                        <a class="dropdown-item" href="{{ route('users.show', Auth::user()->id )}}">
                                         {{ __('過去の学習記録') }}
                                     <a class="dropdown-item" href="{{ url('posts') }}">
                                         {{ __('みんなの学習記録') }}
