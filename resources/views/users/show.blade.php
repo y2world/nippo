@@ -14,7 +14,7 @@
          </div>
         @foreach ($posts as $post)
         <li class="list-group-item">
-        <b>日時 : {{ $post->date }}</b>
+        <b>日時</b> : {{ $post->date }}
         <br>
         <b>学習時間</b> : {{ $post->hour }}時間
         <br>
@@ -23,7 +23,9 @@
         <b>言語</b> : {{ $post->language }}
         <br>
         <b>カテゴリー</b> : {{ $post->category }}
-        </li>
+        </br>
+        <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-secondary">編集</a>
+        </br>
         @endforeach
     </div>
 @endsection
