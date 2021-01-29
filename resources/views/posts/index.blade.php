@@ -17,6 +17,7 @@
                     <b>言語</b> : {{ $post->language }}
                     <br>
                     <b>カテゴリー</b> : {{ $post->category }}
+                    <br>
                     <p class="card-category">by&nbsp;<a href="{{ route('users.show', $post->user_id)}}">{{ $post->user_name }}</a>
                     <br>
                     <br>
