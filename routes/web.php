@@ -36,6 +36,8 @@ Route::get('/show', function () {
 
 Auth::routes();
 
+Route::get('guest', 'Auth\LoginController@guestLogin')->name('login.guest');
+
 Route::resource('posts', 'PostController');
 Route::resource('/users', 'UsersController', ['only' => ['show']]);
 Route::resource('comments', 'CommentController');

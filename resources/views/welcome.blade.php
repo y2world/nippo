@@ -144,6 +144,7 @@
                 <br>
 
                 <div class="links">
+                    <a href="{{ route('login.guest') }}">ゲストログイン</a>
                     <a href="{{ url('/help') }}">ヘルプ</a>
                     <a href="{{ url('/guide') }}">ガイド</a>
                     <a href="{{ url('/contact') }}">お問い合わせ</a>

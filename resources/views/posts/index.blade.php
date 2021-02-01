@@ -26,6 +26,7 @@
                 <div class="card-footer text-muted">
                     {{ $post->created_at }}
                 </div>
+                <br>
                 @endforeach
                 </div>
         </div>
