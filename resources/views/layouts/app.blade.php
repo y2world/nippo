@@ -21,16 +21,149 @@
 </head>
 
 
-<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
 
 <style>
     html, body {
         font-family: helvetica;
     }
     .navbar-brand {
-        color: turquoise;
-        font-family: Oswald;
+        font-family: 'Allerta Stencil', sans-serif;
     }
+    .logo {
+        font-family: 'Allerta Stencil', sans-serif;
+        text align:right;
+        font-size: 25px;
+    }
+
+    .logo a {
+        color:  white;
+    }
+
+    .logo a:hover {
+        color:gray;
+        text-decoration: none; 
+    }
+
+
+    .links a:hover {
+        color:gray;
+        text-decoration: none; 
+    }
+
+    .links a {
+        color:  white;
+        padding : 0 20px;
+    }
+
+    .links {
+        font-size: 12px;
+    }
+
+    
+    footer {
+        color:  white;
+        background-color: black;
+        bottom: 0; /*下に固定*/
+        margin-top: auto;
+    }
+
+    .welcome1 {
+        height: 700px;
+        background-color: #F8FDF5;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome2 {
+        height: 300px;
+        background-color: #FAF45F;
+        text-align: center;
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome3 {
+        height: 300px;
+        background-color: #FAF45F;
+        text-align: center;
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome4 {
+        height: 300px;
+        background-color: #FAF45F;
+        text-align: center;
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nippo {
+        font-size: 1300%;
+        font-family: 'Allerta Stencil', sans-serif;
+        text-align:center;
+    }
+
+    .catchcopy {
+        font-size: 25px;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .nippo {
+        font-size: 500%;
+        font-family: 'Allerta Stencil', sans-serif;
+        text-align:center; }
+
+        .catchcopy {
+        font-size: 15px;
+        font-family: 'Allerta Stencil', sans-serif;
+        }
+
+        .welcome2 {
+        font-size:15px;
+        }
+
+        .welcome3 {
+        font-size:15px;
+        }
+
+        .welcome4 {
+        font-size:15px;
+        }
+
+        .links a {
+        color:  white;
+        padding : 0 3px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .nippo {
+        font-size: 500%;
+        font-family: 'Allerta Stencil', sans-serif;
+        text-align:center; }   
+
+        .catchcopy {
+        font-size: 15px;
+        font-family: 'Allerta Stencil', sans-serif;
+        } 
+}
+
 </style>
 
 <body>
@@ -91,10 +224,48 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
         </main>
     </div>
+@yield('content')
+<footer>
+    <footer class="text-left bg-dark text-white">
+        <br>
+        <div class="container">
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md-10 my-auto">
+                        <div class="links">
+                            <a href="{{ route('login.guest') }}">ゲストログイン</a>
+                            <a href="{{ url('/help') }}">ヘルプ</a>
+                            <a href="{{ url('/guide') }}">ガイド</a>
+                            <a href="{{ url('/contact') }}">お問い合わせ</a>
+                        </div>  
+                    </div>
+                    <div class="col-md-2 my-auto">
+                        <div class="logo">
+                            <a href="{{ url('/') }}">NIPPO</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <br>
+    </footer>  
+</footer>
+
+            <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+
+            <script>
+
+                $(function(){
+                //フッターを最下部に固定
+                    var $footer = $('#footer');
+                    if(window.innerHeight > $footer.offset().top + $footer.outerHeight() ) {
+                        $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
+                    }
+                })
+
+            </script>     
+  
 </body>
 </html>
