@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class=welcome1>
+<div class="welcome1">
     <div class="container">
         <div class="col-md">
             <div class="row">
@@ -19,7 +19,7 @@
         </div>
     </div>
 </div>
-<div class=welcome2>
+<div class="welcome2">
     <div class="container">
         <div class="col-md">
             <div class="row">
@@ -32,22 +32,25 @@
             </div>
         </div>
     </div>
-</div>        
-<div class=welcome3>
+</div>      
+<div class="welcome3">
     <div class="container">
         <div class="col-md">
             <div class="row">
-                <div class="col-md-6 my-auto">
-                    <img src={{ asset('images/img2.png') }} class="image" width="50%">
-                </div>    
-                <div class="col-md-6 my-auto">
-                    <span>勉強した内容や<span></span><span>時間を見やすく</span>
+                    <div class="col-md-6 my-auto">
+                        <img src={{ asset('images/img2.png') }} class="image" width="50%">
+                        </div>
+                    </div>    
+                    <div class="col-md-6 my-auto">
+                        <span>勉強した内容や<span></span><span>時間を見やすく</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>           
-<div class=welcome4>
+<div class="welcome4">
     <div class="container">
         <div class="col-md">
             <div class="row">
@@ -57,9 +60,6 @@
                 </div>    
                 <div class="col-md-6 my-auto">
                     <img src={{ asset('images/img3.png') }} class="image" width="50%">
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </div>
         </div>

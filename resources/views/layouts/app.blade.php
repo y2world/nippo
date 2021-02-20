@@ -80,7 +80,7 @@
     }
 
     .welcome2 {
-        height: 250px;
+        height: 300px;
         background-color: #FAF45F;
         text-align: center;
         font-size:20px;
@@ -100,7 +100,7 @@
     }
 
     .welcome4 {
-        height: 250px;
+        height: 300px;
         background-color: #FAF45F;
         text-align: center;
         font-size:20px;
@@ -123,6 +123,16 @@
     span {
         display: inline-block;
     }
+
+    .box{
+    display: flex;
+    }
+
+    @media screen and (max-width: 768px) {
+    .box{
+    flex-direction: column;
+    }
+}
 
     @media only screen and (max-width: 1200px) {
         .nippo {
@@ -150,6 +160,14 @@
         .links a {
         color:  white;
         padding : 0 9px;
+        }
+
+        .order1 {
+        order: 1;
+        }
+        .order2 {
+        order: 2;
+        }
     }
     
     @media screen and (max-width: 1200px) {
