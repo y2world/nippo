@@ -149,7 +149,7 @@
 
         .links a {
         color:  white;
-        padding : 0 3px;
+        padding : 0 9px;
     }
     
     @media screen and (max-width: 1200px) {
@@ -163,6 +163,7 @@
         font-family: 'Allerta Stencil', sans-serif;
         } 
 }
+    }
 
 </style>
 
@@ -235,10 +236,10 @@
                 <div class="row">
                     <div class="col-md-10 my-auto">
                         <div class="links">
-                            <a href="{{ route('login.guest') }}">ゲストログイン</a>
-                            <a href="{{ url('/help') }}">ヘルプ</a>
-                            <a href="{{ url('/guide') }}">ガイド</a>
-                            <a href="{{ url('/contact') }}">お問い合わせ</a>
+                            <a href="{{ route('login.guest') }}"><span>ゲストログイン</span></a>
+                            <a href="{{ url('/help') }}"><span>ヘルプ</span></a>
+                            <a href="{{ url('/guide') }}"><span>ガイド</span></a>
+                            <a href="{{ url('/contact') }}"><span>お問い合わせ</span></a>
                         </div>  
                     </div>
                     <div class="col-md-2 my-auto">
