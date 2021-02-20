@@ -39,11 +39,9 @@
             <div class="row">
                     <div class="col-md-6 my-auto">
                         <img src={{ asset('images/img2.png') }} class="image" width="50%">
-                        </div>
                     </div>    
                     <div class="col-md-6 my-auto">
                         <span>勉強した内容や<span></span><span>時間を見やすく</span>
-                        </div>
                     </div>
                 </div>
             </div>
