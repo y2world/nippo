@@ -57,6 +57,9 @@
                 </div>    
                 <div class="col-md-6 my-auto">
                     <img src={{ asset('images/img3.png') }} class="image" width="50%">
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>

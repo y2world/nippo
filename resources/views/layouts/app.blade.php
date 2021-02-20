@@ -80,7 +80,7 @@
     }
 
     .welcome2 {
-        height: 300px;
+        height: 250px;
         background-color: #FAF45F;
         text-align: center;
         font-size:20px;
@@ -90,7 +90,7 @@
     }
 
     .welcome3 {
-        height: 300px;
+        height: 250px;
         background-color: #FAF45F;
         text-align: center;
         font-size:20px;
@@ -100,7 +100,7 @@
     }
 
     .welcome4 {
-        height: 300px;
+        height: 250px;
         background-color: #FAF45F;
         text-align: center;
         font-size:20px;
