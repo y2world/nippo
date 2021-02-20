@@ -128,15 +128,11 @@
     display: flex;
     }
 
-    @media screen and (max-width: 768px) {
-    .box{
-    flex-direction: column;
-    }
-}
+    
 
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 768px) {
         .nippo {
-        font-size: 500%;
+        font-size: 00%;
         font-family: 'Allerta Stencil', sans-serif;
         text-align:center; }
 
@@ -172,7 +168,7 @@
     
     @media screen and (max-width: 1200px) {
         .nippo {
-        font-size: 500%;
+        font-size: 700%;
         font-family: 'Allerta Stencil', sans-serif;
         text-align:center; }   
 
