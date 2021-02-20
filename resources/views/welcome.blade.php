@@ -27,7 +27,7 @@
                     誰もが投稿しやすく 
                 </div>    
                 <div class="col-md-6 my-auto">
-                    <br>
+                    <img src={{ asset('images/img1.png') }} class="image" width="50%">
                 </div>
             </div>
         </div>
@@ -38,8 +38,7 @@
         <div class="col-md">
             <div class="row">
                 <div class="col-md-6 my-auto">
-                    <br>
-                   
+                    <img src={{ asset('images/img2.png') }} class="image" width="50%">
                 </div>    
                 <div class="col-md-6 my-auto">
                     <span>勉強した内容や<span></span><span>時間を見やすく</span>
@@ -57,7 +56,7 @@
                    <br>環境を作っていきます。
                 </div>    
                 <div class="col-md-6 my-auto">
-                    <br>
+                    <img src={{ asset('images/img3.png') }} class="image" width="50%">
                 </div>
             </div>
         </div>
