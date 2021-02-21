@@ -15,7 +15,7 @@
                         過去の学習記録
             </div>
             @foreach ($posts as $post)
-            <li class="list-group-item">
+            <div class="list-group-item">
                 <b>日時</b> : {{ $post->date }}
                 <br>
                 <b>学習時間</b> : {{ $post->hour }}時間
@@ -28,10 +28,10 @@
                 <br>
                 <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-secondary">編集</a>
                 </br>
-            </li>
+            </div>
             @endforeach
         </div>
     </div>
 </div>
-<div class="mt-5"></div>
+<div class="mt-3"></div>
 @endsection
