@@ -242,7 +242,7 @@
         </main>
     </div>
 @yield('content')
-<footer>
+<footer id ="footer">
     <footer class="text-left bg-dark text-white">
         <br>
         <div class="container">
@@ -251,7 +251,7 @@
                     <div class="col-md-10 my-auto">
                         <div class="links">
                             <a href="{{ route('login.guest') }}"><span>ゲストログイン</span></a>
-                            <a href="{{ url('/help') }}"><span>ヘルプ</span></a>
+                            <a href="{{ url('/faq') }}"><span>FAQ</span></a>
                             <a href="{{ url('/guide') }}"><span>ガイド</span></a>
                             <a href="{{ url('/contact') }}"><span>お問い合わせ</span></a>
                         </div>  

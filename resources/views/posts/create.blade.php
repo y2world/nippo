@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="mt-3"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -31,7 +32,7 @@
                         学習言語<br>
                         <input type="text" size="30" name="language" placeholder="ex : HTML, CSS, Java Script, PHP" value=""><br><br>
                         カテゴリー<br>
-                        <input type="text" size="30" name="category" placeholder="ex : 自習, 開発, 読書" value="">
+                        <input type="text" size="30" name="category" placeholder="ex : 自習, アプリ開発, 読書" value="">
                         <br>
                         <br>
                         <?php 
@@ -42,10 +43,10 @@
                         <br>
                         <button type="submit">投稿</button>
                     </form>
-                </div>
-                
+                </div>  
             </div>
         </div>
     </div>
 </div>
+<div class="mt-5"></div>
 @endsection

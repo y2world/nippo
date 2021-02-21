@@ -1,7 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
-
+<div class="mt-3"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -17,16 +16,16 @@
                 <input type="text" name="email" value=""><br><br>
                 件名
                 <br>
-                <textarea style="width:100%; height:25px;"></textarea>
-                お問い合わせ内容&nbsp;&nbsp;
+                <input type="text" class="form-control" name="title"><br>
+                お問い合わせ内容
+                <textarea class="form-control" rows="6" name="content"></textarea>
                 <br>
-                <textarea style="width:100%; height:100px;"></textarea>
-                <br>
-                <button type="submit">送信</button>
+                <button type="submit" class="btn btn-primary">送信</button>
                 </div>
                 
             </div>
         </div>
     </div>
 </div>
+<div class="mt-5"></div>
 @endsection

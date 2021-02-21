@@ -21,8 +21,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/help', function () {
-    return view('help');
+Route::get('/faq', function () {
+    return view('faq');
 });
 
 Route::get('/guide', function () {
